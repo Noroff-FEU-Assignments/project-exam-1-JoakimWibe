@@ -1,0 +1,68 @@
+.card {
+  margin: 150px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 850px;
+  width: 600px;
+}
+
+.heading {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#contactForm {
+  max-width: 350px;
+  margin: 30px auto;
+}
+
+.form-error {
+  color: red;
+  display: none;
+}
+
+label {
+  font-family: Montserrat;
+}
+
+form div {
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #645a5a;
+}
+
+.submit-btn {
+  font-family: Montserrat, sans-serif;
+  background: #829483;
+  border: none;
+  width: 370px;
+  padding: 1em;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 0.2em;
+}
+
+.submit-btn:hover {
+  background: white;
+  border: 3px solid #829483;
+  color: #829483;
+}
+
+#success {
+  border: 2px solid #00ff00;
+  width: 345px;
+  padding: 10px;
+  display: none;
+}
+
+#success p {
+  text-align: center;
+}
