@@ -26,5 +26,18 @@
 .john,
 .jane {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.john h2,
+.jane h2 {
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
+}
+
+.john p,
+.jane p {
+  margin-left: 20px;
 }

@@ -1,0 +1,30 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.banner img {
+  max-width: 1000px;
+  height: auto;
+}
+
+.heading {
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.list {
+  max-width: 1000px;
+  margin: 60px auto;
+}
+
+.list-item {
+  margin: 40px 0 40px 0;
+}
+
+.list-item img {
+  max-width: 1000px;
+  height: auto;
+  margin: 20px 0 20px 0;
+}
