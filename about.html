@@ -13,10 +13,11 @@
 <body>
     <header>
         <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fa fa-bars"></i>
-            </label>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <a href="index.html"><img src="img/local/logo.png" alt="logo" class="logo"></a>
             <div class="socials">
                 <a href="http://www.instagram.com"><i class="fa fa-instagram" id="instagram"></i></a>
@@ -24,11 +25,11 @@
                 <a href="http://www.pinterest.com"><i class="fa fa-pinterest-p" id="pinterest"></i></a>
                 <a href="http://www.facebook.com"><i class="fa fa-facebook" id="facebook"></i></a>
             </div>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="posts.html">POSTS</a></li>
-                <li><a href="about.html" class="current">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="about.html" class="current">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav> 
     </header>
@@ -63,6 +64,6 @@
             </p>
         </div>
     </section>
-    <script src="js/header.js"></script>
+    <script src="js/dropdown.js"></script>
 </body>
 </html>
