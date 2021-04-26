@@ -6,11 +6,50 @@ nav {
   height: 100vh;
   width: 100%;
   background-image: url("../img/local/home-banner.jpg");
+  color: #fff;
+}
+
+.banner h1 {
+  text-align: center;
+  padding-top: 400px;
+  font-size: 3rem;
+}
+
+.banner p {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.5rem;
 }
 
 .latest-adventures h2 {
   text-align: center;
   margin-top: 50px;
+}
+
+.inspired {
+  background: #829483;
+}
+
+.inspired a {
+  text-decoration: none;
+}
+
+.text {
+  max-width: 1300px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 50px 0 20px 0;
+}
+
+.inspired-banner {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.inspired-banner img {
+  max-width: 1300px;
+  height: auto;
 }
 
 @media (max-width: 1048px) {

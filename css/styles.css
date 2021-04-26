@@ -61,7 +61,7 @@ nav ul li a:hover {
   display: inline;
   color: #fff;
   border-left: 3px solid #fff;
-  margin: 25px;
+  margin: 23px;
 }
 
 #instagram,
@@ -91,6 +91,68 @@ nav ul li a:hover {
   margin: 5px auto;
   transition: all 0.3s ease-out;
   background: #fff;
+}
+
+/* footer */
+footer {
+  background: #292828;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  min-height: 400px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 20px 0 20px 0;
+  border-top: 1px solid #fff;
+}
+
+.socials-footer {
+  margin-top: 100px;
+}
+
+.footer-nav {
+  margin-top: 108px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 10px 0 10px 0;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0 10px 0;
+}
+
+.socials-container a {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.socials-container h3 {
+  margin: 8px;
+}
+
+.footer-contact {
+  margin-top: 100px;
+}
+
+.footer-contact h3 {
+  margin: 20px 0 20px 0;
+  text-align: end;
 }
 
 @media (max-width: 1444px) {
