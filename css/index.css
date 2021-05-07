@@ -21,9 +21,37 @@ nav {
   font-size: 1.5rem;
 }
 
+.latest-adventures {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 .latest-adventures h2 {
   text-align: center;
-  margin-top: 50px;
+  margin: 50px auto;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.card {
+  margin: 40px;
+  color: #292828;
+  text-decoration: none;
+}
+
+.image {
+  height: 250px;
+  width: 250px;
+}
+
+.title {
+  text-align: center;
+  margin: 20px auto;
 }
 
 .inspired {
@@ -44,7 +72,7 @@ nav {
 .inspired-banner {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
 
 .inspired-banner img {
@@ -52,8 +80,38 @@ nav {
   height: auto;
 }
 
+@media (max-width: 1300px) {
+  .inspired-banner img {
+    max-width: 800px;
+  }
+  .text {
+    max-width: 800px;
+  }
+}
+
 @media (max-width: 1048px) {
   nav {
     background: #829483;
+  }
+}
+
+@media (max-width: 800px) {
+  .inspired-banner img {
+    max-width: 650px;
+  }
+
+  .text {
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 414px) {
+  .banner h1 {
+    padding-top: 300px;
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
   }
 }

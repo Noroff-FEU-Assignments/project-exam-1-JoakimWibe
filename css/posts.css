@@ -1,9 +1,63 @@
+.menu {
+  margin: 200px auto 10px auto;
+  max-width: 1000px;
+}
+
+hr {
+  width: 1000px;
+  color: #292828;
+  margin: 0 auto;
+}
+
 .posts {
-  margin-top: 100px;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.card {
+  color: #292828;
+  text-decoration: none;
+  margin: 50px auto;
+}
+
+.preview {
+  margin-bottom: 80px;
+}
+
+.title,
+.image,
+.preview-text,
+.date,
+.read-more {
+  margin-bottom: 10px;
+}
+
+.date {
+  margin-top: 10px;
+}
+
+.read-more {
+  color: blue;
+  text-decoration: underline;
 }
 
 .image {
-  height: 907px;
-  min-width: 1369px;
+  height: 360px;
+  max-width: 1000px;
   background-repeat: no-repeat;
+}
+
+.more-results {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.more-results:hover {
+  cursor: pointer;
+}
+
+.more-results i {
+  margin: 2px 5px;
 }
