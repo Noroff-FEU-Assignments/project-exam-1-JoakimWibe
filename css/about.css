@@ -1,43 +1,83 @@
 .banner {
-  display: flex;
-  justify-content: center;
-  margin-top: 150px;
+  background: url(../img/local/about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  background-position: center;
+  margin: 100px 20px 0 20px;
 }
 
-.banner img {
-  max-width: 1000px;
-  height: auto;
+.text-area,
+.profiles {
+  margin: 20px;
 }
 
-.text-area {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.text-area h1 {
-  font-size: 2rem;
-  margin: 20px 0 20px 0;
+.profile {
+  margin-top: 20px;
 }
 
 .text-area p {
-  margin: 20px 0 20px 0;
+  margin: 20px 0;
 }
 
-.john,
-.jane {
-  max-width: 1000px;
-  margin: 20px auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.profile-pic-john {
+  background: url(../img/local/john-doe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  background-position: center;
+  margin: 20px 0;
 }
 
-.john h2,
-.jane h2 {
-  grid-column: 1 / -1;
-  margin-bottom: 20px;
+.profile-pic-jane {
+  background: url(../img/local/jane-doe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  background-position: top;
+  margin: 20px 0;
 }
 
-.john p,
-.jane p {
-  margin-left: 20px;
+@media (min-width: 768px) {
+  .banner,
+  .profile-pic-jane,
+  .profile-pic-john {
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    margin: 150px 160px 0 160px;
+    min-height: 500px;
+  }
+
+  .about {
+    margin: 20px 160px;
+  }
+
+  .text-area,
+  .profiles {
+    margin: 0;
+  }
+
+  .profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+
+  .profile-pic-john,
+  .profile-pic-jane {
+    grid-area: 1 / 1;
+  }
+
+  .profile h2 {
+    grid-area: -2 / 1;
+  }
+
+  .profile p {
+    grid-area: 1 / 2;
+    margin-top: 20px;
+  }
 }

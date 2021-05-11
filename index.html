@@ -7,8 +7,9 @@
     <meta name="description" content="Travel Abroad is a travel blog dedicated to adventure and exploration">
     <title>Travel Abroad | Home</title>
     <script src="https://kit.fontawesome.com/6d561979ff.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css"> 
 </head>
 <body>
     <header>
@@ -37,25 +38,31 @@
         <div class="banner">
             <h1>START YOUR JOURNEY</h1>
             <P>Travel Abroad is a travel blog
-                dedicated to adventure & exploration</P>
+                dedicated to adventure & exploration
+            </P>
+            <div class="scroll-btn">
+                <i class="far fa-arrow-alt-circle-down"></i>
+            </div>    
         </div>
-        <section class="latest-adventures">
-            <h2>READ ABOUT OUR LATEST ADVENTURES</h2>
-            <span id="left">&#139;</span>
-            <span id="right">&#155;</span>
-            <div class="content-container">
-                <div class="loader"></div>
+        <h2>READ ABOUT OUR LATEST ADVENTURES</h2>
+        <div class="container">
+            <div class="carousel">
+                <div class="slider">
+                    <div class="loader"></div>
+                </div>
+                <div class="controls">
+                    <i class="fas fa-chevron-left" id="left"></i>
+                    <i class="fas fa-chevron-right" id="right"></i>
+                </div>
             </div>
-        </section>
+        </div>
         <section class="inspired">
             <a href="top-5.html">
                 <div class="text">
                     <h2>Inspired?</h2>
                     <p>Read about our top 5 locations to start your adventure now</p>
                 </div>
-                <div class="inspired-banner">
-                    <img src="img/local/inspired.png" alt="Picture of globus">
-                </div>
+                <div class="inspired-banner"></div>
             </a>
         </section>
     </main>
@@ -97,6 +104,7 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/components/carousel.js"></script>
     <script src="js/header.js"></script>
     <script src="js/dropdown.js"></script>
 </body>

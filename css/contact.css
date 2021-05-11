@@ -1,17 +1,20 @@
 .card {
-  margin: 150px auto;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  height: 850px;
-  width: 600px;
+  margin: 100px auto;
 }
 
 .heading {
   text-align: center;
-  padding-top: 50px;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading h1 {
+  margin-bottom: 20px;
 }
 
 #contactForm {
-  max-width: 350px;
+  max-width: 300px;
   margin: 30px auto;
 }
 
@@ -35,13 +38,14 @@ textarea {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #645a5a;
+  font-family: "lato", sans-serif;
 }
 
 .submit-btn {
   font-family: Montserrat, sans-serif;
   background: #829483;
   border: none;
-  width: 370px;
+  width: 300px;
   padding: 1em;
   color: white;
   margin-top: 20px;
@@ -58,11 +62,36 @@ textarea {
 
 #success {
   border: 2px solid #00ff00;
-  width: 345px;
+  width: 300px;
   padding: 10px;
   display: none;
 }
 
 #success p {
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .card {
+    margin: 150px auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 900px;
+    width: 600px;
+  }
+
+  .heading {
+    max-width: 350px;
+  }
+
+  #contactForm {
+    max-width: 350px;
+  }
+
+  .submit-btn {
+    width: 350px;
+  }
+
+  #success {
+    width: 350px;
+  }
 }

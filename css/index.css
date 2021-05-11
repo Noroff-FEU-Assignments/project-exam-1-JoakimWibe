@@ -1,117 +1,157 @@
-nav {
-  background: transparent;
-}
-
 .banner {
+  background: url(../img/local/home-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
-  width: 100%;
-  background-image: url("../img/local/home-banner.jpg");
+  background-position: center;
   color: #fff;
+  position: relative;
 }
 
-.banner h1 {
+h1 {
+  padding-top: 250px;
   text-align: center;
-  padding-top: 400px;
-  font-size: 3rem;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.2rem;
 }
 
 .banner p {
+  padding: 20px 50px;
   text-align: center;
-  padding-top: 10px;
-  font-size: 1.5rem;
 }
 
-.latest-adventures {
-  max-width: 1300px;
-  margin: 0 auto;
+.container {
+  width: 80%;
+  margin: 10px auto;
 }
 
-.latest-adventures h2 {
-  text-align: center;
-  margin: 50px auto;
+.carousel {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
 }
 
-.content-container {
+.slider {
+  height: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-bottom: 20px;
+  width: 800%;
+  transition: all 0.3s;
 }
 
 .card {
-  margin: 40px;
-  color: #292828;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
+  color: #292828;
 }
 
 .image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 250px;
-  width: 250px;
+  width: 200px;
 }
 
 .title {
-  text-align: center;
-  margin: 20px auto;
+  margin-top: 20px;
+}
+
+.controls i {
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+  font-size: 48px;
+  color: #292828;
+}
+
+#left {
+  left: 0px;
+}
+
+#right {
+  right: 0px;
 }
 
 .inspired {
   background: #829483;
+  padding: 20px;
 }
 
 .inspired a {
   text-decoration: none;
 }
 
-.text {
-  max-width: 1300px;
-  margin: 0 auto;
+.inspired h2,
+.inspired p {
   color: #fff;
-  padding: 50px 0 20px 0;
+  margin-bottom: 10px;
+}
+
+.inspired h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  text-align: start;
 }
 
 .inspired-banner {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 70px;
+  background: url(../img/local/inspired.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  background-position: center;
 }
 
-.inspired-banner img {
-  max-width: 1300px;
-  height: auto;
+.scroll-btn {
+  font-size: 2rem;
+  color: #fff;
+  opacity: 0.7;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin-left: -17px;
 }
 
-@media (max-width: 1300px) {
-  .inspired-banner img {
-    max-width: 800px;
+@media (min-width: 768px) {
+  .inspired-banner {
+    min-height: 200px;
   }
-  .text {
-    max-width: 800px;
+
+  h1 {
+    padding-top: 350px;
   }
 }
 
-@media (max-width: 1048px) {
+@media (min-width: 1024px) {
   nav {
+    background: transparent;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .slider {
+    width: 200%;
+  }
+
+  .inspired {
     background: #829483;
-  }
-}
-
-@media (max-width: 800px) {
-  .inspired-banner img {
-    max-width: 650px;
+    padding: 80px 160px;
   }
 
-  .text {
-    max-width: 650px;
-  }
-}
-
-@media (max-width: 414px) {
-  .banner h1 {
-    padding-top: 300px;
-    font-size: 2rem;
+  .inspired h2 {
+    font-size: 1.5rem;
   }
 
-  .banner p {
-    font-size: 1rem;
+  .inspired-banner {
+    min-height: 300px;
   }
 }

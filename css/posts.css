@@ -1,39 +1,44 @@
 .menu {
-  margin: 200px auto 10px auto;
-  max-width: 1000px;
+  margin-top: 100px;
+}
+
+h1 {
+  color: #292828;
 }
 
 hr {
-  width: 1000px;
-  color: #292828;
-  margin: 0 auto;
-}
-
-.posts {
-  max-width: 1000px;
-  margin: 50px auto;
+  margin: 0 20px;
 }
 
 .card {
   color: #292828;
   text-decoration: none;
-  margin: 50px auto;
+  margin: 50px 0;
 }
 
-.preview {
-  margin-bottom: 80px;
+.image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+  margin: 20px 20px 0 20px;
 }
 
-.title,
-.image,
-.preview-text,
+h1,
+.preview,
+.more-results {
+  padding: 0 20px;
+}
+
+.title {
+  margin: 20px 0 20px 0;
+}
+
 .date,
+.preview-text,
+.image,
 .read-more {
-  margin-bottom: 10px;
-}
-
-.date {
-  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .read-more {
@@ -41,23 +46,49 @@ hr {
   text-decoration: underline;
 }
 
-.image {
-  height: 360px;
-  max-width: 1000px;
-  background-repeat: no-repeat;
-}
-
 .more-results {
-  max-width: 1000px;
-  margin: 50px auto;
   display: flex;
   flex-direction: row;
-}
-
-.more-results:hover {
+  margin: 40px 0;
+  font-family: "Montserrat", sans-serif;
   cursor: pointer;
 }
 
-.more-results i {
+#arrowDown {
   margin: 2px 5px;
+}
+
+@media (min-width: 1024px) {
+  .menu {
+    margin-top: 150px;
+  }
+
+  hr {
+    margin: 0 160px;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .image {
+    grid-area: 1 / 1;
+    margin: 0;
+  }
+
+  .preview {
+    grid-area: 1 / 2;
+    max-width: 800px;
+  }
+
+  h1,
+  .more-results,
+  .card {
+    padding: 0 160px;
+  }
+
+  .title {
+    margin: 0 0 20px 0;
+  }
 }
