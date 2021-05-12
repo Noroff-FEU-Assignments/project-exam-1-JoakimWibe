@@ -25,7 +25,6 @@ async function getPosts() {
 loadMore.addEventListener("click", () => {
     length += 13;
     getPosts(url);
-    //window.scrollTo(0, 5500);
     loadMore.style.display = "none"; 
 });
 
