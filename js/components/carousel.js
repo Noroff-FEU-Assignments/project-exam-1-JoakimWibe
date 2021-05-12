@@ -7,7 +7,6 @@ const mediaQuery = window.matchMedia( '(min-width: 1024px)' );
 
 let sectionIndex = 0;
 
-
 leftArrow.addEventListener('click', function() {
     if(mediaQuery.matches) {
         sectionIndex = (sectionIndex < 0) ? sectionIndex - 1 : 0;
