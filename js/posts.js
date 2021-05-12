@@ -23,9 +23,9 @@ async function getPosts() {
 }
 
 loadMore.addEventListener("click", () => {
-    length += 20;
+    length += 13;
     getPosts(url);
-    window.scrollTo(0, 5500);
+    //window.scrollTo(0, 5500);
     loadMore.style.display = "none"; 
 });
 
@@ -43,7 +43,7 @@ function createHTML(posts) {
                                         <div class="preview">
                                             <h2 class="title">${posts[i].title.rendered}</h2>
                                             <p class="preview-text">${posts[i].excerpt.rendered}</p>
-                                            <h3 class="date">${posts[i].date}</h3>
+                                            <h3 class="date">${posts[i].date.split('T')}</h3>
                                             <p class="read-more">Read more</p>
                                         </div>
                                     </a>`;

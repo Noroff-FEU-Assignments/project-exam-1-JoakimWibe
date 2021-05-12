@@ -29,11 +29,12 @@ function createHTML(details) {
 
     postContainer.innerHTML = `
                                <div id="image" onclick="showModal()" style="background-image: url(${details.better_featured_image.source_url})"></div>
-                               <div id="modal">                                  
+                               <div id="modal">
+                                    <span onclick="closeModal()" class="close">&times;</span>                                  
                                     <img class="modal-image" src="${details.better_featured_image.source_url}"></img>
                                </div>
                                <h1 class="title">${details.title.rendered}</h1>
-                               <h2 class="date">${details.date}</h2>
+                               <h2 class="date">${details.date.split('T')}</h2>
                                <div class="content">
                                   <p>${details.content.rendered}</p>
                                </div>`;
