@@ -1,15 +1,19 @@
-.menu {
-  margin-top: 80px;
-  padding: 20px;
+.bookmark {
+  margin: 100px 20px 20px 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bookmark a {
+  color: #292828;
+  text-decoration: none;
 }
 
 .back {
   margin-bottom: 20px;
 }
 
-.back a,
-.previous,
-.next {
+.back a {
   color: #292828;
   text-decoration: none;
   display: flex;
@@ -17,19 +21,8 @@
   cursor: pointer;
 }
 
-.back-to-posts i,
-.previous i {
+.back-to-posts i {
   margin: 2.5px 5px 0 0;
-}
-
-.next-previous-post {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.next i {
-  margin: 2.5px 0 0 5px;
 }
 
 #image {
@@ -142,12 +135,15 @@ p {
 }
 
 @media (min-width: 1024px) {
-  .menu {
-    margin-top: 120px;
-    padding: 0 160px;
+  .bookmark {
+    margin: 100px 160px 20px 160px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+  }
+
+  .bookmark a {
+    color: #292828;
+    text-decoration: none;
   }
 
   .next-previous-post {

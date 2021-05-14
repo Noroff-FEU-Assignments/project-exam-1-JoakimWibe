@@ -99,6 +99,17 @@ nav ul li a:hover {
   background: #fff;
 }
 
+.bookmark {
+  margin: 100px 160px 20px 160px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bookmark a {
+  color: #292828;
+  text-decoration: none;
+}
+
 footer {
   background: #292828;
   color: #fff;
@@ -244,6 +255,17 @@ footer {
 
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .bookmark {
+    margin: 100px 20px 20px 20px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bookmark a {
+    color: #292828;
+    text-decoration: none;
   }
 
   .footer-content {
