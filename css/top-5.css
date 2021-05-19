@@ -24,11 +24,11 @@
 @media (min-width: 1024px) {
   .banner {
     min-height: 300px;
-    margin: 100px 160px 0 160px;
+    margin: 100px 300px 0 300px;
   }
 
   .top-5 {
-    margin: 20px 160px;
+    margin: 20px 300px;
   }
 
   .list {

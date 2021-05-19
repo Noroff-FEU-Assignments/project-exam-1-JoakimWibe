@@ -1,16 +1,17 @@
-.bookmark {
-  margin: 100px 20px 20px 20px;
-  display: flex;
-  flex-direction: row;
+h1 {
+  font-size: 1.5rem;
 }
 
-.bookmark a {
-  color: #292828;
-  text-decoration: none;
+h2 {
+  font-size: 1rem;
+}
+
+main {
+  margin-top: 100px;
 }
 
 .back {
-  margin-bottom: 20px;
+  margin: 40px 20px;
 }
 
 .back a {
@@ -19,6 +20,7 @@
   display: flex;
   flex-direction: row;
   cursor: pointer;
+  font-family: "Montserrat", sans-serif;
 }
 
 .back-to-posts i {
@@ -29,7 +31,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 250px;
+  min-height: 250px;
   margin: 20px 20px 0 20px;
   cursor: pointer;
 }
@@ -135,19 +137,8 @@ p {
 }
 
 @media (min-width: 1024px) {
-  .bookmark {
-    margin: 100px 160px 20px 160px;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .bookmark a {
-    color: #292828;
-    text-decoration: none;
-  }
-
-  .next-previous-post {
-    max-width: 300px;
+  h1 {
+    font-size: 2rem;
   }
 
   .modal-image {
@@ -163,14 +154,24 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
-    min-width: 500px;
-    margin: 20px 160px;
+    margin: 20px auto;
     cursor: pointer;
+    margin: 0 300px;
   }
 
   .title,
   .date,
   .content {
-    margin: 20px 140px;
+    margin: 20px 300px;
+  }
+
+  .title,
+  .date,
+  p {
+    padding: 0;
+  }
+
+  .back {
+    margin: 40px 300px;
   }
 }

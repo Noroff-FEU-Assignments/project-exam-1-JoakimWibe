@@ -27,14 +27,7 @@ function createHTML(details) {
 
     document.title = 'Travel Abroad | ' + details.title.rendered;
 
-    postContainer.innerHTML = `<div class="bookmark">
-                                    <a href="index.html">Home</a>
-                                    <p>/</p>
-                                    <a href="posts.html">Posts</a>
-                                    <p>/</p>
-                                    <a href="spesific-post.html">${details.title.rendered}</a>
-                               </div>
-                               <div id="image" onclick="showModal()" style="background-image: url(${details.better_featured_image.source_url})"></div>
+    postContainer.innerHTML = `<div id="image" onclick="showModal()" style="background-image: url(${details.better_featured_image.source_url})"></div>
                                <div id="modal">
                                     <span onclick="closeModal()" class="close">&times;</span>                                  
                                     <img class="modal-image" src="${details.better_featured_image.source_url}"></img>
