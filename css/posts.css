@@ -61,7 +61,7 @@ h1,
   }
 
   hr {
-    margin: 0 300px;
+    margin: 0 250px;
   }
 
   .card {
@@ -76,16 +76,27 @@ h1,
 
   .preview {
     grid-area: 1 / 2;
-    max-width: 800px;
   }
 
   h1,
   .more-results,
   .card {
-    padding: 0 300px;
+    padding: 0 250px;
   }
 
   .title {
     margin: 0 0 20px 0;
+  }
+}
+
+@media (min-width: 1444px) {
+  hr {
+    margin: 0 400px;
+  }
+
+  h1,
+  .more-results,
+  .card {
+    padding: 0 400px;
   }
 }

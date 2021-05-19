@@ -154,15 +154,14 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
-    margin: 20px auto;
     cursor: pointer;
-    margin: 0 300px;
+    margin: 0 250px;
   }
 
   .title,
   .date,
   .content {
-    margin: 20px 300px;
+    margin: 20px 250px;
   }
 
   .title,
@@ -172,6 +171,27 @@ p {
   }
 
   .back {
-    margin: 40px 300px;
+    margin: 40px 250px;
+  }
+}
+
+@media (min-width: 1444px) {
+  #image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin: 20px auto;
+    cursor: pointer;
+    margin: 0 400px;
+  }
+
+  .title,
+  .date,
+  .content {
+    margin: 20px 400px;
+  }
+
+  .back {
+    margin: 40px 400px;
   }
 }
