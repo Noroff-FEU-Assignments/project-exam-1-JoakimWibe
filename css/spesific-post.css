@@ -2,6 +2,15 @@ h1 {
   font-size: 1.5rem;
 }
 
+.bookmark {
+  margin: 20px;
+}
+
+.bookmark a {
+  color: #292828;
+  text-decoration: none;
+}
+
 h2 {
   font-size: 1rem;
 }
@@ -141,6 +150,10 @@ p {
     font-size: 2rem;
   }
 
+  .bookmark {
+    margin: 20px 250px;
+  }
+
   .modal-image {
     position: absolute;
     top: 50%;
@@ -176,6 +189,10 @@ p {
 }
 
 @media (min-width: 1444px) {
+  .bookmark {
+    margin: 20px 400px;
+  }
+
   #image {
     background-repeat: no-repeat;
     background-size: cover;

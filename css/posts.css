@@ -7,6 +7,15 @@ hr {
   margin: 0 20px;
 }
 
+.bookmark {
+  margin: 20px;
+}
+
+.bookmark a {
+  color: #292828;
+  text-decoration: none;
+}
+
 .card {
   color: #292828;
   text-decoration: none;
@@ -64,6 +73,10 @@ h1,
     margin: 0 250px;
   }
 
+  .bookmark {
+    margin: 20px 250px;
+  }
+
   .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -92,6 +105,10 @@ h1,
 @media (min-width: 1444px) {
   hr {
     margin: 0 400px;
+  }
+
+  .bookmark {
+    margin: 20px 400px;
   }
 
   h1,

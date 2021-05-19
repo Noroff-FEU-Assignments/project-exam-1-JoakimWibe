@@ -1,10 +1,19 @@
+.bookmark {
+  margin: 100px 20px 0 20px;
+}
+
+.bookmark a {
+  color: #292929;
+  text-decoration: none;
+}
+
 .banner {
   background: url(../img/local/inspired.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 200px;
   background-position: center;
-  margin: 100px 20px 0 20px;
+  margin: 20px 20px 0 20px;
 }
 
 .top-5 {
@@ -22,13 +31,16 @@
 }
 
 @media (min-width: 1024px) {
+  .bookmark {
+    margin: 100px 250px 0 250px;
+  }
   .banner {
     min-height: 300px;
-    margin: 100px 300px 0 300px;
+    margin: 20px 250px 0 250px;
   }
 
   .top-5 {
-    margin: 20px 300px;
+    margin: 20px 250px;
   }
 
   .list {
