@@ -31,6 +31,10 @@ body {
   background: #fff;
 }
 
+/* ============ 
+   Navbar
+   ============ */
+
 header {
   position: fixed;
   top: 0;
@@ -111,6 +115,10 @@ nav ul li a:hover {
   background: #fff;
 }
 
+/* ============ 
+   footer
+   ============ */
+
 footer {
   background: #292828;
   color: #fff;
@@ -171,6 +179,10 @@ footer {
   margin: 20px 0 20px 0;
 }
 
+/* ============ 
+   loader
+   ============ */
+
 .loader {
   border: 10px solid #f3f3f3;
   border-top: 10px solid #829483;
@@ -198,6 +210,10 @@ footer {
 }
 
 @media (max-width: 1023px) {
+  /* ============ 
+   Navbar
+   ============ */
+
   nav {
     background: #829483;
   }
@@ -257,6 +273,10 @@ footer {
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  /* ============ 
+   footer
+   ============ */
 
   .footer-content {
     display: flex;
