@@ -22,10 +22,10 @@ async function getPosts() {
     }
 }
 
-loadMore.addEventListener("click", () => {
+loadMore.addEventListener('click', () => {
     length += 13;
     getPosts(url);
-    loadMore.style.display = "none"; 
+    loadMore.style.display = 'none'; 
 });
 
 getPosts();

@@ -1,11 +1,11 @@
-const header = document.querySelector("nav");
+const header = document.querySelector('nav');
 
 window.onscroll = function() {
     const top = window.scrollY;
     
     if (top >= 50) {
-        header.classList.add("active");
+        header.classList.add('active');
     } else {
-        header.classList.remove("active");
+        header.classList.remove('active');
     }
 }
