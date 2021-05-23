@@ -1,3 +1,7 @@
+h1 {
+  margin: 20px;
+}
+
 .bookmark {
   margin: 100px 20px 0 20px;
 }
@@ -31,6 +35,10 @@
 }
 
 @media (min-width: 1024px) {
+  h1 {
+    margin: 20px 250px;
+  }
+
   .bookmark {
     margin: 100px 250px 0 250px;
   }
